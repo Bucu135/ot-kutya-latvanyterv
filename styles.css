@@ -110,10 +110,19 @@ p { margin: 0 0 1em; }
 .live { display: inline-flex; align-items: center; gap: 10px; font: 500 15px/1.3 var(--sans); color: rgba(244, 239, 230, .85); margin: 0; }
 .live i { width: 10px; height: 10px; border-radius: 50%; background: #9a958c; flex: none; position: relative; }
 .live.open i { background: #45d48b; }
-.live.open i::after { content: ''; position: absolute; inset: -5px; border-radius: 50%; border: 2px solid #45d48b; opacity: 0; animation: ping 2.4s var(--ease) infinite; }
+/* kitöltött fényudvar saját rétegen — a skálázott vékony keret iOS-en vibrált */
+.live.open i::after {
+  content: ''; position: absolute; inset: 0; border-radius: 50%; background: #45d48b;
+  opacity: 0; will-change: transform, opacity; backface-visibility: hidden;
+  transform: translateZ(0) scale(1);
+  animation: ping 2.6s cubic-bezier(.25, .6, .3, 1) infinite;
+}
 .live.closed i { background: #e0794f; }
 .live-dark { color: var(--ink-2); margin-bottom: 24px; }
-@keyframes ping { 0% { transform: scale(.5); opacity: .8; } 100% { transform: scale(1.6); opacity: 0; } }
+@keyframes ping {
+  0% { transform: translateZ(0) scale(1); opacity: .45; }
+  70%, 100% { transform: translateZ(0) scale(2.6); opacity: 0; }
+}
 
 /* =========================================================
    FEJLÉC — lebegő, nincs sáv; görgetés után kapszula
