@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Öt Kutya · Étterem, Csíkszereda · 1997 óta</title>
+<meta name="description" content="Az Öt Kutya Csíkszereda egyik legrégebbi étterme, 1997 nyara óta. Napi menü, házias magyar konyha, nápolyi pizza, terasz. Zöld Péter utca 17.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#232226">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Öt Kutya · Étterem, Csíkszereda · 1997 óta">
+<meta property="og:description" content="Napi menü, házias magyar konyha, nápolyi pizza és terasz a Zöld Péter utcában.">
+<meta property="og:image" content="https://bucu135.github.io/ot-kutya-latvanyterv/img/og.jpg">
+<link rel="icon" href="img/logo-240.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wdth,wght@0,75..100,400..700;1,75..100,400..700&family=Playfair:ital,opsz,wdth,wght@0,5..1200,87.5..112.5,300..900;1,5..1200,87.5..112.5,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#foglalas" data-i18n="skip">Ugrás a foglaláshoz</a>
+
+<!-- ============ FEJLÉC (lebegő, sáv nélkül) ============ -->
+<header class="nav" aria-label="Fő navigáció">
+  <a class="brand" href="#top" aria-label="Öt Kutya – vissza az elejére">
+    <span class="brand-badge"><img src="img/logo-240.webp" alt=""></span>
+    <span class="brand-word">Öt Kutya<small data-i18n="brand.sub">étterem · 1997</small></span>
+  </a>
+  <nav class="nav-links">
+    <a href="#napi" data-i18n="nav.daily">Napi menü</a>
+    <a href="#etlap" data-i18n="nav.menu">Étlap</a>
+    <a href="#pizza" data-i18n="nav.pizza">Pizza</a>
+    <a href="#rolunk" data-i18n="nav.about">Rólunk</a>
+    <a href="#kapcsolat" data-i18n="nav.contact">Kapcsolat</a>
+  </nav>
+  <div class="nav-end">
+    <div class="lang" role="group" aria-label="Nyelv / Limbă">
+      <button type="button" data-lang="hu" aria-pressed="true">HU</button>
+      <button type="button" data-lang="ro" aria-pressed="false">RO</button>
+    </div>
+    <a class="btn btn-teal nav-cta" href="#foglalas" data-i18n="cta.book">Asztalfoglalás</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Menü">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" aria-hidden="true">
+  <nav>
+    <a href="#napi" data-i18n="nav.daily">Napi menü</a>
+    <a href="#etlap" data-i18n="nav.menu">Étlap</a>
+    <a href="#pizza" data-i18n="nav.pizza">Pizza</a>
+    <a href="#mazlista" data-i18n="nav.lucky">Mázlista Vendég</a>
+    <a href="#rolunk" data-i18n="nav.about">Rólunk</a>
+    <a href="#foglalas" data-i18n="cta.book">Asztalfoglalás</a>
+    <a href="#kapcsolat" data-i18n="nav.contact">Kapcsolat</a>
+  </nav>
+  <p class="drawer-foot"><a href="tel:+40744575124">0744 575 124</a><br>Zöld Péter u. 17, Csíkszereda</p>
+</div>
+
+<main id="top">
+
+<!-- ============ HERO: osztott tábla (sötét fal | fotó) ============ -->
+<section class="hero" aria-labelledby="h1">
+  <div class="hero-wall">
+    <div class="hero-in">
+      <p class="eyebrow eyebrow-light rv" data-i18n="hero.eyebrow">Étterem · Csíkszereda · Zöld Péter utca 17</p>
+      <h1 id="h1" class="hero-title rv">
+        <span data-i18n="hero.l1">A város</span>
+        <span data-i18n="hero.l2">törzshelye.</span>
+        <em data-i18n="hero.l3">1997 nyara óta.</em>
+      </h1>
+      <p class="hero-lead rv" data-i18n="hero.lead">Délben napi menü, este nápolyi pizza, közben gulyás, pörkölt és mézes-fokhagymás camembert. Türkiz pad, lila székek, cementlapos padló – és öt bulldog, aki vigyáz a házra.</p>
+      <div class="hero-cta rv">
+        <a class="btn btn-teal" href="#foglalas" data-i18n="cta.book">Asztalfoglalás</a>
+        <a class="btn btn-ghost-light" href="#etlap" data-i18n="cta.menu">Megnézem az étlapot</a>
+      </div>
+      <p class="live rv" data-live><i></i><span class="st-text">&nbsp;</span></p>
+    </div>
+    <img class="hero-dogs" src="img/logo-480.webp" alt="" aria-hidden="true">
+  </div>
+  <figure class="hero-photo">
+    <img src="img/belso-1400.webp" srcset="img/belso-800.webp 800w, img/belso-1400.webp 1400w" sizes="(max-width: 900px) 100vw, 50vw" alt="Az Öt Kutya belső tere: türkiz pad, lila székek, cementlapos padló, a falon krétával rajzolt bulldogok" fetchpriority="high">
+  </figure>
+</section>
+
+<!-- a krém lap rácsúszik a hero aljára -->
+<div class="sheet">
+
+<!-- ============ TÉNYEK ============ -->
+<section class="facts" aria-label="Röviden">
+  <div class="wrap facts-grid">
+    <div class="fact rv"><b data-count="1997">1997</b><span data-i18n="facts.since">nyara óta várja a vendégeket</span></div>
+    <div class="fact rv"><b>4,6</b><span data-i18n="facts.rating">Google-átlag, több mint 1100 véleményből</span></div>
+    <div class="fact rv"><b data-count="6">6</b><span data-i18n="facts.days">nap nyitva egy héten – csak hétfőn pihenünk</span></div>
+    <div class="fact rv"><b data-count="2">2</b><span data-i18n="facts.kitchens">konyha egy fedél alatt: házias magyar és nápolyi pizza</span></div>
+  </div>
+</section>
+
+<!-- ============ NAPI MENÜ ============ -->
+<section class="daily" id="napi" aria-labelledby="napi-t">
+  <div class="wrap daily-grid">
+    <div class="daily-copy">
+      <p class="eyebrow rv" data-i18n="daily.eyebrow">Napi menü · délben</p>
+      <h2 id="napi-t" class="h2 rv" data-i18n="daily.title">Délben leves, főétel – és már mehetsz is vissza dolgozni.</h2>
+      <p class="lead rv" data-i18n="daily.lead">A vendégek szerint a két fogás italával együtt kifejezetten jó áron van. A második fogás sokszor előbb érkezik, mint ahogy a levest befejeznéd.</p>
+      <ul class="ticks rv">
+        <li data-i18n="daily.t1">Gyors kiszolgálás, ebédszünetre szabva</li>
+        <li data-i18n="daily.t2">Helyben, elvitelre vagy házhozszállítással</li>
+        <li data-i18n="daily.t3">Időnként külön hétvégi menü, limitált helyekkel</li>
+      </ul>
+    </div>
+
+    <article class="dm-card rv" aria-labelledby="dm-date">
+      <header class="dm-head">
+        <span class="dm-kicker" data-i18n="daily.today">A mai menü</span>
+        <h3 id="dm-date" class="dm-date" data-today>&nbsp;</h3>
+      </header>
+      <ol class="dm-list">
+        <li><small data-i18n="daily.soup">Leves</small><b data-i18n="daily.s1">Gulyásleves csipetkével</b></li>
+        <li><small data-i18n="daily.main">Főétel · A</small><b data-i18n="daily.m1">Marhapörkölt nokedlivel</b></li>
+        <li><small data-i18n="daily.main2">Főétel · B</small><b data-i18n="daily.m2">Kárpáti borzoska, fokhagymás-tejfölös öntettel</b></li>
+      </ol>
+      <p class="dm-note" data-i18n="daily.note"><strong>Látványterv:</strong> az ételek a mostani étlapról valók. Az élő oldalon a konyha reggel telefonról írja be a napi menüt, és az itt, a Facebookon és a Google-profilon egyszerre jelenik meg.</p>
+      <div class="dm-foot">
+        <a class="btn btn-ink" href="tel:+40744575124" data-i18n="daily.call">Elviszem · 0744 575 124</a>
+        <img class="dm-dog" src="img/logo-240.webp" alt="" aria-hidden="true">
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ ÉTLAP ============ -->
+<section class="menu" id="etlap" aria-labelledby="etlap-t">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow rv" data-i18n="menu.eyebrow">Étlap · Meniu</p>
+      <h2 id="etlap-t" class="h2 rv" data-i18n="menu.title">Házias, bőséges, két nyelven – ahogy a papírétlapon is.</h2>
+      <p class="lead rv" data-i18n="menu.lead">Válassz kategóriát, szűrj vegetáriánus vagy csípős ételekre, és kapcsold be az allergéneket, ha figyelned kell rájuk.</p>
+    </div>
+
+    <div class="menu-tools rv">
+      <div class="tabs" role="tablist" aria-label="Kategóriák" id="menuTabs"></div>
+      <div class="filters">
+        <button type="button" class="chip" data-filter="veg" aria-pressed="false"><span class="ic ic-veg" aria-hidden="true"></span><span data-i18n="menu.veg">Vegetáriánus</span></button>
+        <button type="button" class="chip" data-filter="hot" aria-pressed="false"><span class="ic ic-hot" aria-hidden="true"></span><span data-i18n="menu.hot">Csípős</span></button>
+        <button type="button" class="chip" data-filter="alg" aria-pressed="false"><span class="ic ic-alg" aria-hidden="true">A</span><span data-i18n="menu.alg">Allergének</span></button>
+      </div>
+    </div>
+
+    <div class="menu-body">
+      <figure class="menu-photo rv" id="menuPhoto">
+        <img src="img/camembert-800.webp" alt="" id="menuPhotoImg">
+        <figcaption id="menuPhotoCap">&nbsp;</figcaption>
+      </figure>
+      <div class="menu-list" id="menuList" aria-live="polite">
+        <noscript><p data-i18n="menu.noscript">Az étlap megtekintéséhez kapcsold be a JavaScriptet, vagy hívj minket: 0744 575 124.</p></noscript>
+      </div>
+    </div>
+
+    <details class="legend rv">
+      <summary data-i18n="menu.legend">Mit jelentenek a betűk? – allergének</summary>
+      <dl class="legend-grid" id="legend"></dl>
+    </details>
+    <p class="menu-note" data-i18n="menu.note">Az árak lejben, a legutóbb közzétett étlap szerint. Az élő oldalon a konyha egy táblázatból frissíti őket.</p>
+  </div>
+</section>
+
+<!-- ============ NAPLESPIZZA ============ -->
+<section class="pizza" id="pizza" aria-labelledby="pizza-t">
+  <div class="wrap pizza-grid">
+    <div class="pizza-copy">
+      <p class="eyebrow eyebrow-brass rv">NaplesPizza · by Öt Kutya · since 2024</p>
+      <h2 id="pizza-t" class="h2 h2-light rv" data-i18n="pizza.title">Nápolyi pizza, hólyagosra sült peremmel.</h2>
+      <p class="lead lead-light rv" data-i18n="pizza.lead">Fior di latte mozzarella, bazsalikom, olívaolaj – és egy perem, amin látszik, hogy jó forrón sült. A ház saját pizzériája ugyanabban az étteremben, mellette a szakács különleges ajánlataival.</p>
+      <ol class="pz-list" id="pizzaList"></ol>
+      <div class="pz-special rv">
+        <h3 class="pz-sp-t"><span>Chef's choice</span> <em data-i18n="pizza.special">különleges pizzák</em></h3>
+        <ul>
+          <li><b>Fungi</b><span data-i18n="pizza.sp1">mozzarella, pecorino, gomba, stracciatella, citromos kakukkfű</span></li>
+          <li><b>Nduja × Blue</b><span data-i18n="pizza.sp2">karamellizált hagyma, mozzarella, nduja, kéksajtszósz</span></li>
+          <li><b>Altro Formaggi</b><span data-i18n="pizza.sp3">mozzarella, pecorino, gorgonzola, hot honey, kecskesajt, dió</span></li>
+          <li><b>Pepperoni</b><span data-i18n="pizza.sp4">paradicsomszósz, mozzarella, pepperoni, parmezán</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pizza-photos">
+      <figure class="pz-ph pz-ph-a rv"><img src="img/pizza-1-800.webp" srcset="img/pizza-1-800.webp 800w, img/pizza-1-1300.webp 1300w" sizes="(max-width: 900px) 70vw, 30vw" alt="Nápolyi pizza csípős szalámival és jalapeñóval" loading="lazy"></figure>
+      <figure class="pz-ph pz-ph-b rv"><img src="img/pizza-2-800.webp" srcset="img/pizza-2-800.webp 800w, img/pizza-2-1200.webp 1200w" sizes="(max-width: 900px) 60vw, 24vw" alt="Margherita bazsalikommal" loading="lazy"></figure>
+      <figure class="pz-ph pz-ph-c rv"><img src="img/pizza-5-800.webp" alt="Pizza chorizóval" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MÁZLISTA VENDÉG (kockajáték) ============ -->
+<section class="lucky" id="mazlista" aria-labelledby="lucky-t">
+  <div class="wrap lucky-grid">
+    <div class="lucky-copy">
+      <p class="eyebrow rv" data-i18n="lucky.eyebrow">A ház játéka</p>
+      <h2 id="lucky-t" class="h2 rv" data-i18n="lucky.title">Mázlista Vendég: dupla hatos, és az ételt mi álljuk.</h2>
+      <p class="lead rv" data-i18n="lucky.lead">Fizetés előtt dobj a két kockával. Ha mindkettő hatos, az általad fogyasztott étel árát a ház állja. Jöhettek négyen, öten vagy akár tizenketten – mindenki dobhat.</p>
+      <p class="fine rv" data-i18n="lucky.fine">Az akció csak az ételfogyasztásra érvényes, italra nem.</p>
+    </div>
+    <div class="dice-box rv">
+      <div class="dice-felt">
+        <div class="die" id="die1" aria-hidden="true"></div>
+        <div class="die" id="die2" aria-hidden="true"></div>
+      </div>
+      <button type="button" class="btn btn-teal dice-btn" id="diceBtn" data-i18n="lucky.roll">Próbadobás</button>
+      <p class="dice-out" id="diceOut" aria-live="polite" data-i18n="lucky.hint">Esély: 1 a 36-hoz. Gyakorolj itt, élesben nálunk dobsz.</p>
+      <p class="dice-count"><span data-i18n="lucky.rolls">Dobások:</span> <b id="diceN">0</b></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RÓLUNK ============ -->
+<section class="about" id="rolunk" aria-labelledby="about-t">
+  <div class="wrap">
+    <div class="about-grid">
+      <figure class="about-ph about-ph-big rv">
+        <img src="img/tabla-1300.webp" srcset="img/tabla-700.webp 700w, img/tabla-1300.webp 1300w" sizes="(max-width: 900px) 100vw, 45vw" alt="A homlokzat türkiz fémbetűi a sötétre égetett fán: KUTYA, RESTAURANT" loading="lazy">
+      </figure>
+      <div class="about-copy">
+        <p class="eyebrow rv" data-i18n="about.eyebrow">Rólunk</p>
+        <h2 id="about-t" class="h2 rv" data-i18n="about.title">Harminc nyár a Zöld Péter utcában.</h2>
+        <p class="rv" data-i18n="about.p1">Az Öt Kutya 1997 nyarán nyitotta meg a kapuit, és ma a város egyik legrégebbi étterme. 2024 óta saját nápolyi pizzéria is működik a házban, a lényeg viszont ugyanaz: bőséges, házias étel, gyors és kedves kiszolgálás.</p>
+        <p class="rv" data-i18n="about.p2">Az öt bulldog a logón hokiütőt tart. Csíkszeredában ezt nem kell magyarázni.</p>
+        <div class="award rv">
+          <img src="img/dij-800.webp" alt="Firma de Aur 2022 díj az 5T Kutya Étteremnek" loading="lazy">
+          <p><b>Firma de Aur 2022</b><span data-i18n="about.award">Az online vendégértékelések alapján Románia legjobban értékelt cégei közé került az étterem.</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="strip">
+      <figure class="strip-ph rv"><img src="img/terasz-828.webp" alt="Két hamburger, sör és lilakáposzta-saláta a teraszon" loading="lazy"><figcaption data-i18n="about.c1">A terasz nyáron</figcaption></figure>
+      <figure class="strip-ph rv"><img src="img/polc-800.webp" alt="Polc a sötét falon, ágakkal díszítve" loading="lazy"><figcaption data-i18n="about.c2">A sötét fal</figcaption></figure>
+      <figure class="strip-ph rv"><img src="img/kave-800.webp" alt="Cappuccino a teraszon" loading="lazy"><figcaption data-i18n="about.c3">Kávé ebéd után</figcaption></figure>
+      <figure class="strip-ph rv"><img src="img/haz-800.webp" alt="Az étterem épülete a Zöld Péter utcában" loading="lazy"><figcaption>Zöld Péter u. 17</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOGLALÁS + RENDELÉS ============ -->
+<section class="book" id="foglalas" aria-labelledby="book-t">
+  <div class="wrap book-grid">
+    <div class="book-copy">
+      <p class="eyebrow rv" data-i18n="book.eyebrow">Asztalfoglalás</p>
+      <h2 id="book-t" class="h2 rv" data-i18n="book.title">Foglalj asztalt fél perc alatt.</h2>
+      <p class="lead rv" data-i18n="book.lead">Csak a nyitvatartási időben kínálunk időpontot. Nagyobb társaságnál, születésnapnál írd meg a megjegyzésben – összetoljuk az asztalokat.</p>
+      <div class="deliver rv">
+        <h3 data-i18n="book.deliver">Inkább otthon ennéd?</h3>
+        <p data-i18n="book.deliverP">Rendelj a HAMM alkalmazásban, vagy hívj, és elvitelre összekészítjük.</p>
+        <a class="btn btn-ghost" href="tel:+40744575124">0744 575 124</a>
+      </div>
+    </div>
+
+    <form class="bk rv" id="bkForm" novalidate>
+      <div class="bk-pane on" data-pane="1">
+        <fieldset>
+          <legend data-i18n="book.when">Melyik nap?</legend>
+          <div class="days" id="bkDays"></div>
+        </fieldset>
+        <fieldset>
+          <legend data-i18n="book.time">Hánykor?</legend>
+          <div class="slots" id="bkSlots"></div>
+        </fieldset>
+        <fieldset class="row2">
+          <legend data-i18n="book.people">Hányan lesztek?</legend>
+          <div class="stepper">
+            <button type="button" data-step="-1" aria-label="Kevesebb">−</button>
+            <output id="bkPpl">2</output>
+            <button type="button" data-step="1" aria-label="Több">+</button>
+          </div>
+          <div class="seat" role="radiogroup" aria-label="Hova?">
+            <label><input type="radio" name="seat" value="in" checked><span data-i18n="book.in">Bent</span></label>
+            <label><input type="radio" name="seat" value="out"><span data-i18n="book.out">Terasz</span></label>
+          </div>
+        </fieldset>
+        <button type="button" class="btn btn-teal bk-go" id="bkNext" data-i18n="book.next" disabled>Tovább az adatokhoz</button>
+      </div>
+
+      <div class="bk-pane" data-pane="2">
+        <p class="bk-sum" id="bkSum"></p>
+        <label class="fld"><span data-i18n="book.name">Név</span><input name="name" autocomplete="name" required></label>
+        <label class="fld"><span data-i18n="book.phone">Telefonszám</span><input name="phone" type="tel" autocomplete="tel" inputmode="tel" required></label>
+        <label class="fld"><span data-i18n="book.note">Megjegyzés (nem kötelező)</span><textarea name="note" rows="2"></textarea></label>
+        <div class="bk-row">
+          <button type="button" class="btn btn-ghost" data-prev data-i18n="book.back">Vissza</button>
+          <button type="submit" class="btn btn-teal" data-i18n="book.send">Foglalás elküldése</button>
+        </div>
+      </div>
+
+      <div class="bk-pane" data-pane="3">
+        <h3 class="bk-done-t" data-i18n="book.doneT">Így nézne ki a visszaigazolás</h3>
+        <div class="sms"><small>SMS · Öt Kutya</small><p id="smsText"></p></div>
+        <p class="bk-honest" data-i18n="book.honest"><strong>Látványterv – a foglalás nem ment el sehova.</strong> Az élő oldalon az étterem azonnal e-mailt és értesítést kap, a vendég pedig ezt az SMS-t. Addig is: hívj minket a 0744 575 124-es számon.</p>
+        <button type="button" class="btn btn-ghost" id="bkReset" data-i18n="book.again">Új foglalás</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ MIT TUD EZ AZ OLDAL (pitch) ============ -->
+<section class="pitch" aria-labelledby="pitch-t">
+  <div class="wrap">
+    <p class="eyebrow eyebrow-light rv" data-i18n="pitch.eyebrow">Csak a látványtervben</p>
+    <h2 id="pitch-t" class="h2 h2-light rv" data-i18n="pitch.title">Mit dolgozna ez az oldal a csapat helyett?</h2>
+    <ol class="pitch-list">
+      <li class="rv"><b>01</b><h3 data-i18n="pitch.1t">Napi menü telefonról</h3><p data-i18n="pitch.1p">Reggel beírjátok, és egyszerre kerül fel az oldalra, a Facebookra és a Google-profilra. Nincs több külön plakát-szerkesztés.</p></li>
+      <li class="rv"><b>02</b><h3 data-i18n="pitch.2t">Foglalás telefonhívás nélkül</h3><p data-i18n="pitch.2p">A vendég kiválasztja a napot, az órát és a létszámot; ti értesítést kaptok, ő SMS-t. A hétvégi menüs limitált helyek is innen telnek.</p></li>
+      <li class="rv"><b>03</b><h3 data-i18n="pitch.3t">Mindig friss étlap, allergénekkel</h3><p data-i18n="pitch.3p">Egy táblázatból frissül az ár és a kínálat – a papírétlap új nyomtatása nélkül. Magyarul és románul.</p></li>
+      <li class="rv"><b>04</b><h3 data-i18n="pitch.4t">Megtalálnak a Google-ban</h3><p data-i18n="pitch.4p">A 4,6-os értékelés mellé végre saját weboldal kerül a Google-profilra, nem csak egy Facebook-link.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ KAPCSOLAT ============ -->
+<section class="contact" id="kapcsolat" aria-labelledby="contact-t">
+  <div class="wrap contact-grid">
+    <div class="contact-copy">
+      <p class="eyebrow rv" data-i18n="contact.eyebrow">Kapcsolat</p>
+      <h2 id="contact-t" class="h2 rv" data-i18n="contact.title">Zöld Péter utca 17. Itt vagyunk 1997 óta.</h2>
+      <p class="live live-dark rv" data-live><i></i><span class="st-text">&nbsp;</span></p>
+      <dl class="hours rv" id="hours">
+        <dt data-i18n="d.mon">Hétfő</dt><dd data-i18n="contact.closed">zárva</dd>
+        <dt data-i18n="d.tue">Kedd</dt><dd>11:00 – 22:00</dd>
+        <dt data-i18n="d.wed">Szerda</dt><dd>11:00 – 22:00</dd>
+        <dt data-i18n="d.thu">Csütörtök</dt><dd>11:00 – 22:00</dd>
+        <dt data-i18n="d.fri">Péntek</dt><dd>11:00 – 22:00</dd>
+        <dt data-i18n="d.sat">Szombat</dt><dd>10:00 – 22:00</dd>
+        <dt data-i18n="d.sun">Vasárnap</dt><dd>11:00 – 22:00</dd>
+      </dl>
+      <ul class="cinfo rv">
+        <li><span data-i18n="contact.addr">Cím</span><a href="https://www.google.com/maps/dir/?api=1&amp;destination=46.3536368,25.8000538" target="_blank" rel="noopener">Strada Zöld Péter 17, 530110 Csíkszereda / Miercurea Ciuc</a></li>
+        <li><span data-i18n="contact.phone">Telefon</span><a href="tel:+40744575124">0744 575 124</a></li>
+        <li><span>Facebook</span><a href="https://www.facebook.com/profile.php?id=100063467716067" target="_blank" rel="noopener">Öt Kutya</a></li>
+      </ul>
+    </div>
+    <div class="map rv">
+      <iframe title="Öt Kutya a térképen" src="https://maps.google.com/maps?q=46.3536368,25.8000538&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+</div><!-- /sheet -->
+</main>
+
+<!-- ============ LÁBLÉC ============ -->
+<footer class="foot">
+  <div class="tiles" aria-hidden="true"></div>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <span class="foot-badge"><img src="img/logo-480.webp" alt="Öt Kutya – Restaurant · Étterem logó"></span>
+      <p data-i18n="foot.claim">A város törzshelye, 1997 nyara óta.</p>
+    </div>
+    <div>
+      <h3 data-i18n="foot.find">Itt vagyunk</h3>
+      <p>Zöld Péter u. 17<br>Csíkszereda / Miercurea Ciuc<br><a href="tel:+40744575124">0744 575 124</a></p>
+    </div>
+    <div>
+      <h3 data-i18n="foot.open">Nyitvatartás</h3>
+      <p data-i18n="foot.hours">K–P 11–22 · Szo 10–22<br>V 11–22 · H zárva</p>
+    </div>
+    <div>
+      <h3 data-i18n="foot.more">Továbbiak</h3>
+      <p><a href="#etlap" data-i18n="nav.menu">Étlap</a><br><a href="#pizza">NaplesPizza</a><br><a href="https://www.facebook.com/profile.php?id=100063467716067" target="_blank" rel="noopener">Facebook</a></p>
+    </div>
+  </div>
+  <p class="foot-small wrap" data-i18n="foot.small">Látványterv – az Öt Kutya részére készült bemutató. A tartalom a nyilvános Facebook- és Google-adatokon alapul.</p>
+</footer>
+
+<!-- mobil lebegő dokk -->
+<nav class="mbar" aria-label="Gyors elérés">
+  <a href="tel:+40744575124"><span class="mi mi-call" aria-hidden="true"></span><span data-i18n="mbar.call">Hívás</span></a>
+  <a href="#etlap"><span class="mi mi-menu" aria-hidden="true"></span><span data-i18n="nav.menu">Étlap</span></a>
+  <a href="#foglalas" class="mbar-main"><span data-i18n="mbar.book">Foglalás</span></a>
+</nav>
+
+<script src="data.js"></script>
+<script src="locale.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
