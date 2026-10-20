@@ -26,12 +26,6 @@
       seat: { in: 'bent', out: 'terasz' },
       sum: (d, t, n, s) => `${d}, ${t} · ${n} fő · ${s}`,
       sms: (name, d, t, n, s) => `Kedves ${name}! Asztalod foglalva: ${d}, ${t}, ${n} fő (${s}). Öt Kutya, Zöld Péter u. 17. Ha mégsem jönnél, válaszolj: NEM.`,
-      dice: {
-        win: 'Dupla hatos! Élesben most az ételed a házé lenne.',
-        near: 'Egy hatos megvan… a másik kocka nem akart.',
-        pair: v => `Dupla ${['', 'egyes', 'kettes', 'hármas', 'négyes', 'ötös'][v]} – szép, de csak a dupla hatos nyer.`,
-        miss: 'Most nem jött össze. A gulyás így is megéri.'
-      }
     },
     ro: {
       loc: 'ro-RO', cur: 'lei',
@@ -48,12 +42,6 @@
       seat: { in: 'înăuntru', out: 'terasă' },
       sum: (d, t, n, s) => `${d}, ${t} · ${n} pers. · ${s}`,
       sms: (name, d, t, n, s) => `Bună, ${name}! Masa ta e rezervată: ${d}, ${t}, ${n} pers. (${s}). Cinci Căței, str. Zöld Péter 17. Dacă nu mai poți veni, răspunde: NU.`,
-      dice: {
-        win: 'Dublă de șase! În realitate, mâncarea ta ar fi din partea casei.',
-        near: 'Un șase avem… celălalt zar n-a vrut.',
-        pair: v => `Dublă de ${v} – frumos, dar câștigă doar dubla de șase.`,
-        miss: 'De data asta n-a ieșit. Gulașul merită oricum.'
-      }
     }
   };
   let lang = 'hu';
@@ -170,38 +158,6 @@
     const dl = $('#legend'); if (!dl) return;
     dl.innerHTML = Object.entries(ALG).map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v[lang])}</dd></div>`).join('');
   }
-
-  /* ---------- Mázlista Vendég ---------- */
-  const PIPS = { 1: [4], 2: [0, 8], 3: [0, 4, 8], 4: [0, 2, 6, 8], 5: [0, 2, 4, 6, 8], 6: [0, 2, 3, 5, 6, 8] };
-  const die1 = $('#die1'), die2 = $('#die2');
-  function drawDie(el, v) {
-    el.innerHTML = Array.from({ length: 9 }, (_, i) => (PIPS[v].includes(i) ? '<i></i>' : '<span></span>')).join('');
-    el.classList.toggle('six', v === 6);
-    el.dataset.v = v;
-  }
-  let rolls = 0, rolling = false;
-  function roll() {
-    if (rolling) return;
-    rolling = true;
-    const a = 1 + Math.floor(Math.random() * 6), b = 1 + Math.floor(Math.random() * 6);
-    const out = $('#diceOut');
-    out.classList.remove('win');
-    [die1, die2].forEach(d => { d.classList.remove('roll'); void d.offsetWidth; d.classList.add('roll'); });
-    let n = 0;
-    const tick = setInterval(() => {   // pörgés közben villódzó számok
-      drawDie(die1, 1 + Math.floor(Math.random() * 6)); drawDie(die2, 1 + Math.floor(Math.random() * 6));
-      if (++n > 6) {
-        clearInterval(tick);
-        drawDie(die1, a); drawDie(die2, b);
-        rolls++; $('#diceN').textContent = rolls;
-        const D = t().dice;
-        out.textContent = a === 6 && b === 6 ? D.win : (a === 6 || b === 6) ? D.near : a === b ? D.pair(a) : D.miss;
-        out.classList.toggle('win', a === 6 && b === 6);
-        rolling = false;
-      }
-    }, reduced ? 1 : 90);
-  }
-  if (die1) { drawDie(die1, 6); drawDie(die2, 6); $('#diceBtn').addEventListener('click', roll); }
 
   /* ---------- Foglaló ---------- */
   const form = $('#bkForm');

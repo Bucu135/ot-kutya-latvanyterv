@@ -8,7 +8,6 @@ window.LOCALE_RO = {
   "nav.pizza": "Pizza",
   "nav.about": "Despre noi",
   "nav.contact": "Contact",
-  "nav.lucky": "Clientul norocos",
   "cta.book": "Rezervă o masă",
   "cta.menu": "Vezi meniul",
 
@@ -56,14 +55,6 @@ window.LOCALE_RO = {
   "pizza.sp2": "ceapă caramelizată, mozzarella, nduja, sos de brânză albastră",
   "pizza.sp3": "mozzarella, pecorino, gorgonzola, hot honey, brânză de capră, nuci",
   "pizza.sp4": "sos de roșii, mozzarella, pepperoni, parmezan",
-
-  "lucky.eyebrow": "Jocul casei",
-  "lucky.title": "Clientul norocos: dublă de șase și mâncarea e din partea casei.",
-  "lucky.lead": "Înainte de plată, aruncă cele două zaruri. Dacă ies doi de șase, prețul mâncării consumate de tine îl plătește casa. Veniți câte patru, cinci sau chiar doisprezece – oricine poate arunca.",
-  "lucky.fine": "Oferta e valabilă doar pentru mâncare, nu și pentru băuturi.",
-  "lucky.roll": "Aruncare de probă",
-  "lucky.hint": "Șanse: 1 la 36. Exersează aici, la noi arunci pe bune.",
-  "lucky.rolls": "Aruncări:",
 
   "about.eyebrow": "Despre noi",
   "about.title": "Treizeci de veri pe strada Zöld Péter.",

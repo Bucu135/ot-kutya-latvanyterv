@@ -412,43 +412,6 @@ p { margin: 0 0 1em; }
 .pz-ph-c { aspect-ratio: 1; }
 
 /* =========================================================
-   MÁZLISTA VENDÉG
-   ========================================================= */
-.lucky { position: relative; padding: clamp(80px, 10vw, 140px) 0; background: var(--tile) center / 132px; }
-.lucky::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(244, 239, 230, .97) 0%, rgba(244, 239, 230, .94) 48%, rgba(244, 239, 230, .55) 100%); }
-.lucky > * { position: relative; }
-.lucky-grid { display: grid; grid-template-columns: 1fr minmax(0, 460px); gap: clamp(40px, 6vw, 90px); align-items: center; }
-.fine { font-size: 15px; color: var(--muted); }
-.dice-box { background: var(--card); border-radius: 30px; padding: 28px; text-align: center; box-shadow: 0 30px 60px -25px rgba(34, 49, 74, .45); }
-.dice-felt {
-  height: 220px; border-radius: 22px; margin-bottom: 22px;
-  background: radial-gradient(circle at 50% 40%, #6fb0ad, var(--sage) 55%, #4a807d);
-  display: flex; align-items: center; justify-content: center; gap: 34px;
-  box-shadow: inset 0 6px 24px rgba(0, 0, 0, .25);
-  perspective: 600px;
-}
-.die {
-  width: 82px; height: 82px; border-radius: 18px; padding: 12px;
-  background: linear-gradient(145deg, #fffdf8, #e9e2d3);
-  box-shadow: 0 10px 18px rgba(0, 0, 0, .28), inset 0 -4px 0 rgba(0, 0, 0, .08);
-  display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr);
-  transition: transform .2s;
-}
-.die i { width: 13px; height: 13px; border-radius: 50%; background: var(--ink); place-self: center; }
-.die.six i { background: var(--tile-red); }
-.die.roll { animation: roll .7s var(--ease); }
-@keyframes roll {
-  0% { transform: rotate(0) translateY(0); }
-  30% { transform: rotate(200deg) translateY(-34px) scale(1.06); }
-  60% { transform: rotate(320deg) translateY(4px); }
-  100% { transform: rotate(360deg) translateY(0); }
-}
-.dice-btn { width: 100%; }
-.dice-out { margin: 18px 0 6px; font-weight: 500; min-height: 3.2em; }
-.dice-out.win { font: 700 22px/1.3 var(--display); color: var(--tile-red); }
-.dice-count { font-size: 14px; color: var(--muted); margin: 0; font-variant-numeric: tabular-nums; }
-
-/* =========================================================
    RÓLUNK
    ========================================================= */
 .about { padding: clamp(80px, 10vw, 140px) 0; }
@@ -614,14 +577,13 @@ body:not(.is-ready) .hero .rv { opacity: 0; transform: translate3d(0, 26px, 0); 
   .hero-in { margin-left: 0; }
   .hero-dogs { width: 70%; right: -14%; bottom: 2%; }
   .sheet { margin-top: -48px; border-radius: 28px 28px 0 0; }
-  .daily-grid, .menu-body, .pizza-grid, .lucky-grid, .about-grid, .book-grid, .contact-grid { grid-template-columns: minmax(0, 1fr); }
+  .daily-grid, .menu-body, .pizza-grid, .about-grid, .book-grid, .contact-grid { grid-template-columns: minmax(0, 1fr); }
   .menu-tools { position: static; border-radius: 22px; margin-inline: 0; padding: 0; background: none; backdrop-filter: none; -webkit-backdrop-filter: none; }
   .tabs { margin-inline: calc(-1 * var(--gut)); padding-inline: var(--gut); max-width: none; width: calc(100% + 2 * var(--gut)); }
   .menu-photo { position: relative; top: 0; aspect-ratio: 16 / 10; }
   .pz-list { grid-template-columns: 1fr; }
   .pizza-photos { order: -1; }
   .pz-ph-a { aspect-ratio: 16 / 11; }
-  .lucky::before { background: rgba(244, 239, 230, .93); }
   .about-ph-big { aspect-ratio: 4 / 3.4; }
   .strip { grid-template-columns: 1fr 1fr; }
   .map, .map iframe { min-height: 340px; }
@@ -662,8 +624,6 @@ body:not(.is-ready) .hero .rv { opacity: 0; transform: translate3d(0, 26px, 0); 
   .hero-cta .btn { flex: 1 1 100%; }
   .m-items.compact { grid-template-columns: 1fr; }
   .pz-special ul { grid-template-columns: 1fr; }
-  .dice-felt { height: 180px; gap: 24px; }
-  .die { width: 72px; height: 72px; }
   .award { grid-template-columns: 72px 1fr; }
   .award img { width: 72px; height: 72px; }
   .dm-dog { display: none; }
